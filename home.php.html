@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Automobile Replacement System</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+      body 
+      {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        min-height: 100vh;
+
+        background: linear-gradient(
+          rgba(10,20,40,0.85),
+          rgba(10,20,40,0.85)
+        ),
+        url("dark-tech.jpg") no-repeat center center fixed;
+
+       background-size: cover;
+
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       color: #f0f0f0;
+     }
+
+
+
+        .hero {
+            text-align: center;
+            padding: 40px;
+            max-width: 900px;
+        }
+
+        .hero h1 {
+            font-size: 42px;
+            margin-bottom: 10px;
+            letter-spacing: 1px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 40px;
+            color: #e0e0e0;
+        }
+
+        .menu {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .menu a {
+            text-decoration: none;
+        }
+
+        .card {
+            background: white;
+            color: #333;
+            padding: 25px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card h3 {
+            margin-bottom: 10px;
+            color: #4facfe;
+        }
+
+        .card p {
+            font-size: 14px;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+        }
+
+        footer {
+            position: absolute;
+            bottom: 15px;
+            font-size: 14px;
+            color: #ddd;
+        }
+
+        @media (max-width: 700px) {
+            .hero h1 {
+                font-size: 32px;
+            }
+
+            .menu {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="hero">
+        <h1>Automobile Replacement System</h1>
+        <p>
+            A centralized system to manage customers, items, suppliers,
+            employees, and vendor allocations efficiently.
+        </p>
+
+        <div class="menu">
+            <a href="userlogin1.html">
+                <div class="card">
+                    <h3>Customer Module</h3>
+                    <p>Add and manage customer details</p>
+                </div>
+            </a>
+
+            <a href="item.php">
+                <div class="card">
+                    <h3>Item & Vendor Module</h3>
+                    <p>Manage items and vendor allocation</p>
+                </div>
+            </a>
+
+            <a href="supplier.html">
+                <div class="card">
+                    <h3>Supplier Module</h3>
+                    <p>Store and manage supplier information</p>
+                </div>
+            </a>
+
+            <a href="employee.php">
+                <div class="card">
+                    <h3>Employee Module</h3>
+                    <p>Maintain employee details</p>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <footer>
+        © 2026 Automobile Replacement System | Mini Project
+    </footer>
+
+</body>
+</html>
