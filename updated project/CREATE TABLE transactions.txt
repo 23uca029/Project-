@@ -1,0 +1,23 @@
+CREATE TABLE transactions (
+id INT AUTO_INCREMENT ,
+job_id INT NOT NULL PRIMARY KEY,
+custId INT NOT NULL,
+custName VARCHAR(100),
+job_date DATE,
+car_number VARCHAR(20),
+technician_allocated VARCHAR(100),
+car_model VARCHAR(100),
+completion_date DATE
+);
+
+
+
+
+CREATE TABLE transaction_details (
+    job_id INT(10) NOT NULL PRIMARY KEY,
+    item_no INT(10) NOT NULL,
+    item_description VARCHAR(120) NOT NULL,
+    quantity_used INT NOT NULL,
+    price DECIMAL(10,2) NOT NULL,
+    amount DECIMAL(10,2) NOT NULL
+);
