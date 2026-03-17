@@ -207,6 +207,13 @@ footer {
                 <p>Manage employee details including technical and non-technical staff.</p>
             </div>
         </a>
+	
+	<a href="transaction.php" style="text-decoration:none;">
+    	    <div class="card">
+        	<h3>Transaction Module</h3>
+        	<p>Manage mirror replacement transactions, billing, and service details 		efficiently.</p>
+    	    </div>
+	</a>
 
     </div>
 </section>
