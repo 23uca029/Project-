@@ -35,7 +35,7 @@ body {
     background: #eef2f7;
 }
 
-/* ===== NAVBAR ===== */
+/* NAVBAR */
 .navbar {
     background: #0f172a;
     padding: 15px 40px;
@@ -61,7 +61,7 @@ body {
     color: #4facfe;
 }
 
-/* ===== CONTAINER ===== */
+/* CONTAINER */
 .container {
     max-width: 900px;
     margin: 60px auto;
@@ -77,7 +77,7 @@ body {
     color: #4facfe;
 }
 
-/* ===== FORM ===== */
+/* FORM */
 form {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -122,7 +122,6 @@ button:hover {
     background: #00c6ff;
 }
 
-/* ===== RESPONSIVE ===== */
 @media(max-width:768px){
     form {
         grid-template-columns: 1fr;
@@ -153,7 +152,7 @@ button:hover {
 <div class="container">
     <h2>Item Details & Vendor Allocation</h2>
 
-    <form method="POST">
+    <form action="save_item.php" method="POST">
 
         <label>Item Number</label>
         <input type="number" name="item_no" required>
@@ -163,6 +162,10 @@ button:hover {
 
         <label>Number of Items</label>
         <input type="number" name="no_of_items" required>
+
+        <!-- NEW PRICE FIELD -->
+        <label>Price (₹)</label>
+        <input type="number" name="price" step="0.01" placeholder="Enter Item Price" required>
 
         <label>Unit of Measure</label>
         <select name="unit_of_measure" required>
@@ -183,7 +186,7 @@ button:hover {
         <label>Vendor Code</label>
         <input type="text" value="<?php echo $vendorCode; ?>" readonly>
 
-        <button type="submit" name="submit">Allocate Vendor</button>
+        <button type="submit" name="submit">Submit</button>
 
     </form>
 </div>
